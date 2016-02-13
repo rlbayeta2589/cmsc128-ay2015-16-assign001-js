@@ -3,6 +3,7 @@
 *	numerus.js
 *
 *	Author : Bayeta Reynaldo, III
+*			 CMSC128 AB-1L
 *			 https://github.com/rlbayeta2589
 *
 *################################################################################################/

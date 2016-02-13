@@ -2,13 +2,13 @@ var numerus = {
 
 	words : {
 		ones : [null	, 'one'		, 'two'		, 'three'	, 'four'	, 'five'	,
-				    'six'	, 'seven'	, 'eight'	, 'nine'	, 'ten'		,'eleven'	,
-				    'twelve', 'thirteen', 'fourteen', 'fifteen'	, 'sixteen'	, 'seventeen',
-				    'eighteen', 'nineteen'
-				],
+			'six'	, 'seven'	, 'eight'	, 'nine'	, 'ten'		,'eleven'	,
+			'twelve', 'thirteen', 'fourteen', 'fifteen'	, 'sixteen'	, 'seventeen',
+			'eighteen', 'nineteen'
+			],
 		tens : [null	, null		, 'twenty'	, 'thirty'	, 'fourty'	, 'fifty'	,
-			    'sixty'	, 'seventy'	, 'eighty'	, 'ninety'
-				  ]
+		    	'sixty'	, 'seventy'	, 'eighty'	, 'ninety'
+			]
 	},
 
 	convertTrio : function(data){

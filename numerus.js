@@ -2,13 +2,13 @@ var numerus = {
 
 	words : {
 		ones : [null	, 'one'		, 'two'		, 'three'	, 'four'	, 'five'	,
-			'six'	, 'seven'	, 'eight'	, 'nine'	, 'ten'		,'eleven'	,
-			'twelve', 'thirteen', 'fourteen', 'fifteen'	, 'sixteen'	, 'seventeen',
-			'eighteen', 'nineteen'
-			],
+				'six'	, 'seven'	, 'eight'	, 'nine'	, 'ten'		,'eleven'	,
+				'twelve', 'thirteen', 'fourteen', 'fifteen'	, 'sixteen'	, 'seventeen',
+				'eighteen', 'nineteen'
+				],
 		tens : [null	, null		, 'twenty'	, 'thirty'	, 'fourty'	, 'fifty'	,
-		    	'sixty'	, 'seventy'	, 'eighty'	, 'ninety'
-			]
+				'sixty'	, 'seventy'	, 'eighty'	, 'ninety'
+				]
 	},
 
 	convertTrio : function(data){
@@ -43,7 +43,7 @@ var numerus = {
 					convert = numerus.words.tens[numbers[i]];
 				}
 			}
-			words += convert + " ";
+			words += (convert || '') + " ";
 			words = (index==0 ? words + "hundred " : words);
 			index++;
 		};
@@ -60,7 +60,7 @@ var numerus = {
 			index;
 
 		if(!data){
-			return "";
+			return "Incomplete request data";
 		}
 
 		if(!regExCheck.test(data)){
@@ -107,7 +107,7 @@ var numerus = {
 			digit2 = 0;
 
 		if(!data){
-			return "";
+			return "Incomplete request data";
 		}
 
 		if(data=="zero"){
@@ -169,6 +169,50 @@ var numerus = {
 		}
 
 		return total;
+	},
+
+	wordsToCurrency : function(data,type){
+		var money_types = ['USD','PHP','JPY'],
+			number = numerus.wordsToNum(data);
+
+		if(money_types.indexOf(type)==-1){
+			return "Invalid currency type";
+		}
+
+		if(isNaN(number)||number==""){
+			return number;
+		}
+
+		return (type + ' ' + number);
+	},
+
+	numberDelimited : function(data,limiter,jumps){
+		var number = data.toString(),
+			num_len = number.length,
+			hops = Number(jumps),
+			delimited = "";
+
+		if(!data || !limiter || !jumps){
+			return "Incomplete request data";
+		}
+
+		if(isNaN(hops) || isNaN(number)){
+			return "Invalid input";
+		}
+
+		if(number.length <= hops){
+			return "Jump value must be less than the length of the input";
+		}
+
+		for (var i = 0; i < num_len; i++) {
+			delimited += number[i];
+
+			if(((num_len-1-i)%hops==0) && i!=num_len-1){
+				delimited += limiter;
+			}
+		}
+
+		return delimited;
 	}
 
 }
@@ -176,5 +220,3 @@ var numerus = {
 // Reference of ideas
 // 	array of words			=> http://stackoverflow.com/questions/5529934
 //	onkeyup function		=> http://www.w3schools.com/jsref/event_onkeyup.asp
-//	multipple delimiters	=> http://stackoverflow.com/questions/19313541
-//	padding of zeroes		=> http://stackoverflow.com/questions/5366849

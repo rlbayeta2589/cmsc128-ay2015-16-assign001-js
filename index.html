@@ -3,20 +3,127 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bayeta_CMSC128_AB1L</title>
+	<style>
+		body {
+			background-color:lightgrey;
+		}
+		input {
+			text-align:center;
+		}
+		table{
+    		border-collapse: collapse;
+		}
+		td {
+			border: 1px solid black;
+			width: 45%;
+		}
+		tr{
+			height: 80px;
+			text-indent: 20px;
+		}
+		.title{
+			width: 100%;
+			height: 100%;
+			text-indent: 50px;
+		}
+		.title td{
+			border :none;
+		}
+	</style>
 </head>
 <body>
-	<h2>num2words</h2>
-	<h4>INPUT</h4>
-	<input type="text" id="input" onkeyup="document.getElementById('output').innerHTML = numerus.numToWords(this.value);">
-    <h4>OUTPUT</h4>
-    <p id="output"></p>
+	<h1 style="text-align:center">numerus.js</h1>
+	<hr>
+	<div>
+		<table width="100%">
+			<tr class="title">
+				<td><h2>Number to Words</h2></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="input1" size="55" onkeyup="toWords()" placeholder="number">
+			    </td>
+				<td>
+	   				<p id="output1"></p>
+				</td>
+			</tr>
+			<tr class="title">
+				<td ><h2>Words To Number</h2></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="input2" size="55" onkeyup="toNum()" placeholder="words">
+			    </td>
+				<td>
+					<p id="output2"></p>
+				</td>
+			</tr>
+			<tr class="title">
+				<td><h2>Words To Currency</h2></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="input3a" size="5" placeholder="type">
+					<input type="text" id="input3b" size="40" placeholder="words">
+					<button onclick="currency()">>></button>
+			    </td>
+				<td>
+					<p id="output3"></p>
+				</td>
+			</tr>
+			<tr class="title">
+				<td><h2>Number Delimited</h2></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="input4a" size="30" placeholder="number">
+					<input type="text" id="input4b" size="5" placeholder="delimiter">
+					<input type="text" id="input4c" size="5" placeholder="jumps">
+					<button onclick="delimit()">>></button>
+			    </td>
+				<td>
+					<p id="output4"></p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+    <script src="numerus.js"></script>\
+    <script>
+    	function toWords(){
+    		var output = document.getElementById('output1'),
+    			input = document.getElementById('input1'),
+    			answer = numerus.numToWords(input.value);
 
-    <h2>words2num</h2>
-	<h4>INPUT</h4>
-	<input type="text" id="input2" onkeyup="document.getElementById('output2').innerHTML = numerus.wordsToNum(this.value);">
-    <h4>OUTPUT</h4>
-    <p id="output2"></p>
+    			output.innerHTML =  (answer=='Incomplete request data' ? '':answer);
+    	}
+    	function toNum(){
+    		var output = document.getElementById('output2'),
+    			input = document.getElementById('input2').value,
+    			answer = numerus.wordsToNum(input);
 
-    <script src="numerus.js"></script>
+    			output.innerHTML =  (answer=='Incomplete request data' ? '':answer);
+    	}
+    	function currency(){
+    		var output = document.getElementById('output3'),
+    			input1 = document.getElementById('input3a').value,
+    			input2 = document.getElementById('input3b').value,
+    			answer = numerus.wordsToCurrency(input2,input1);
+
+    			output.innerHTML =  answer;
+    	}
+    	function delimit(){
+    		var output = document.getElementById('output4'),
+    			input1 = document.getElementById('input4a').value,
+    			input2 = document.getElementById('input4b').value,
+    			input3 = document.getElementById('input4c').value,
+    			answer = numerus.numberDelimited(input1,input2,input3);
+
+    			output.innerHTML =  answer;
+    	}
+    </script>
 </body>
 </html>

@@ -266,6 +266,10 @@ var numerus = {
 		var money_types = ['USD','PHP','JPY'],				//valid currency types
 			number = numerus.wordsToNum(data);				// convert the words to numbers
 
+		if(!data || !type){									//checker
+			return "Incomplete request data";
+		}
+
 		if(money_types.indexOf(type)==-1){					//if the given currency type 
 			return "Invalid currency type";					//	do not exist in the list
 		}

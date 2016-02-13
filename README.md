@@ -80,12 +80,14 @@ numerus = {
 
 <table>
 <tr>
-	<th>Array of Words</th>
+	<th><a href="http://stackoverflow.com/questions/5529934">Array of Words</a></th>
 	<th>Others</th>
 </tr>
 <tr>
 	<td>
-	<br/><a href="http://stackoverflow.com/questions/5529934"><img src="http://i.imgur.com/pszAeGh.png" alt="STACK OVERFLOW" width="200" height="50" border="10" /></a><br/>
+	<a href="http://stackoverflow.com/questions/5529934">
+		<img src="http://i.imgur.com/pszAeGh.png" alt="STACK OVERFLOW" width="200" height="50" border="10"/>
+	</a><br/>
 	</td>
 	<td>
 	<br/><img src="http://vignette2.wikia.nocookie.net/le-miiverse-resource/images/b/b1/Imagination-1-.gif/revision/latest?cb=20151212152505" alt="IMAGINATION" width="200" height="200" border="10" /><br/>

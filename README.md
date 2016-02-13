@@ -1,11 +1,10 @@
 ## numerus.js
 
----
-Assignment in the course CMSC128 2nd Semester AY2015-2016
----
+#### Assignment in the course CMSC128 2nd Semester AY2015-2016
 
+```javascript
 numerus = {
-	words 
+	words
 		==>		array of words corresponding the numbers
 					in the ones and tens
 
@@ -74,3 +73,4 @@ numerus = {
 
 }
 
+```

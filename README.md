@@ -2,6 +2,8 @@
 
 #### Assignment in the course CMSC128 2nd Semester AY2015-2016
 
+---
+##### Outline
 ```javascript
 numerus = {
 	words
@@ -37,7 +39,6 @@ numerus = {
 				|	987654		|		321		|	three hundred twenty one	|	||
 				|	987			|		654		|	six hundred fifty four		|	||
 				|	0			|		987		|	nine hundred eighty seven	|	||	
-				|---------------|---------------|-------------------------------|	||
 		
 		The way we read these three numbers are the same. The difference is they are
 			followed by the name of the group they belong, so to convert this groups
@@ -74,3 +75,8 @@ numerus = {
 }
 
 ```
+---
+###### Reference of Ideas
+[Array of Words](http://stackoverflow.com/questions/5529934)
+
+[Others](http://vignette2.wikia.nocookie.net/le-miiverse-resource/images/b/b1/Imagination-1-.gif/revision/latest?cb=20151212152505)

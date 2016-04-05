@@ -197,7 +197,8 @@ var numerus = {
 			total = 0,
 			num = 0,
 			digit1 = 0,
-			digit2 = 0;
+			digit2 = 0,
+			temp;
 
 		if(!data){											//checkers
 			return "Incomplete request data";

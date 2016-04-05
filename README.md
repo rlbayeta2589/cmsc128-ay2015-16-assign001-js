@@ -1,5 +1,25 @@
 ## numerus.js
 
+### HAVE SOME [`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+[`        DEMO        `](https://rlbayeta2589.github.io/cmsc128-ay2015-16-assign001-js "numerus.js DEMO")
+
 #### Assign 001: Programming a Number Library
 
 ---
